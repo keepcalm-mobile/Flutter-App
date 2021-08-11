@@ -38,8 +38,7 @@ class MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: SafeArea(
-      child: Material(
+      body: Material(
         color: currentColor,
         child: InkWell(
           onTap: () => changeColor(),
@@ -47,6 +46,6 @@ class MainScreenState extends State<MainScreen> {
               Center(child: Text("Hey there", style: TextStyle(fontSize: 25))),
         ),
       ),
-    ));
+    );
   }
 }
